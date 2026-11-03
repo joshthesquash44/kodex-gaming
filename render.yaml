@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: koex-gaming
+    runtime: static
+    buildCommand: pip install -r requirements.txt && python -m pygbag --build main.py && mkdir -p public/games/arcade && cp -R build/web/. public/games/arcade/
+    staticPublishPath: public

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090b12">
+  <title>KOEX GAMING — Play something good.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">K</span><span>KOEX <b>GAMING</b></span></a>
+    <nav><a class="active" href="#games">Games</a><a href="#about">About</a></nav>
+    <a class="top-cta" href="#games">Play now <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> THE ARCADE IS OPEN</div>
+        <h1>PRESS PLAY.<br><span>LOSE TRACK</span><br>OF TIME.</h1>
+        <p>Quick games. High scores. No downloads. Pick a game and jump straight in.</p>
+        <a class="primary-btn" href="#games">Explore games <span>→</span></a>
+        <div class="hero-meta"><span>05 GAMES</span><i></i><span>100% FREE</span><i></i><span>IN YOUR BROWSER</span></div>
+      </div>
+      <div class="hero-art" aria-label="Abstract arcade illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="hero-glow"></div>
+        <div class="hero-tile tile-back">KOEX<br><small>ARCADE</small></div>
+        <div class="hero-tile tile-front"><span class="tile-symbol">✦</span><b>READY<br>PLAYER<br>ONE</b><small>INSERT COIN? NAH.</small></div>
+        <div class="float-chip chip-one">PLAY / REPEAT</div><div class="float-chip chip-two">EST. 2026</div>
+      </div>
+    </section>
+
+    <section class="games-section" id="games">
+      <div class="section-heading">
+        <div><div class="eyebrow">PICK YOUR NEXT OBSESSION</div><h2>THE GAME <span>ROOM</span></h2></div>
+        <div class="game-count">01 — 05 <span> / AVAILABLE</span></div>
+      </div>
+      <div class="game-grid">
+        <article class="game-card featured">
+          <div class="game-art racing-art"><span class="art-label">ARCADE / DRIVING</span><div class="road"><i></i><i></i><i></i></div><div class="car car-red"></div><div class="car car-white"></div><span class="speed-lines"></span></div>
+          <div class="card-info"><div><h3>Neon Racer</h3><p>Dodge traffic. Beat your distance.</p></div><button class="play-btn" data-open-game>PLAY <span>↗</span></button></div>
+        </article>
+        <article class="game-card">
+          <div class="game-art snake-art"><span class="art-label">ARCADE / CLASSIC</span><div class="snake-board"><b></b><b></b><b></b><b></b><b></b><em></em></div></div>
+          <div class="card-info"><div><h3>Snake</h3><p>Grow longer. Don't crash.</p></div><button class="play-btn" data-open-game>PLAY <span>↗</span></button></div>
+        </article>
+        <article class="game-card">
+          <div class="game-art pong-art"><span class="art-label">ARCADE / SPORTS</span><div class="pong-line"></div><div class="paddle left"></div><div class="paddle right"></div><div class="pong-ball"></div><span class="pong-score">03 : 02</span></div>
+          <div class="card-info"><div><h3>Pong</h3><p>Classic paddle-versus-computer.</p></div><button class="play-btn" data-open-game>PLAY <span>↗</span></button></div>
+        </article>
+        <article class="game-card">
+          <div class="game-art breakout-art"><span class="art-label">ARCADE / REFLEX</span><div class="bricks"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="break-ball"></div><div class="break-paddle"></div></div>
+          <div class="card-info"><div><h3>Breakout</h3><p>Clear the wall. Keep the ball alive.</p></div><button class="play-btn" data-open-game>PLAY <span>↗</span></button></div>
+        </article>
+        <article class="game-card">
+          <div class="game-art dodger-art"><span class="art-label">ARCADE / SURVIVAL</span><div class="dodger-player"></div><i class="fall fall-a"></i><i class="fall fall-b"></i><i class="fall fall-c"></i></div>
+          <div class="card-info"><div><h3>Block Dodger</h3><p>Stay sharp. Avoid the falling blocks.</p></div><button class="play-btn" data-open-game>PLAY <span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="arcade-panel" id="about">
+      <div><div class="eyebrow">ONE PLACE. FIVE WAYS TO PLAY.</div><h2>BUILT FOR<br><span>THE NEXT ROUND.</span></h2></div>
+      <p>KOEX Gaming is a small browser arcade. The games run in a Pygame-powered player compiled for the web, so you can play without installing a desktop app.</p>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">K</span><span>KOEX <b>GAMING</b></span></a><span>© 2026 KOEX GAMING</span><span>MADE TO PLAY.</span></footer>
+
+  <div class="game-modal" id="gameModal" aria-hidden="true">
+    <div class="modal-top"><div><span class="live-dot"></span> KOEX ARCADE <small>· GAME PLAYER</small></div><button id="closeGame" aria-label="Close game">✕</button></div>
+    <div class="game-frame-wrap"><iframe id="gameFrame" title="KOEX Gaming arcade" src="about:blank" allow="fullscreen; autoplay"></iframe></div>
+    <div class="modal-foot"><span>CHOOSE A GAME FROM THE IN-GAME MENU</span><span>KEYBOARD CONTROLS · ESC TO RETURN TO MENU</span></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
